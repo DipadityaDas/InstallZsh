@@ -166,3 +166,7 @@ plugins=(
 ### Set a Theme
 
 First we will download the [dipadityadas.zsh-theme](https://github.com/DipadityaDas/InstallZsh/blob/main/dipadityadas.zsh-theme).
+
+```shell
+cp dipadityadas.zsh-theme ~/.oh-my-zsh/theme/
+```
