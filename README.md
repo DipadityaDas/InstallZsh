@@ -178,3 +178,7 @@ ZSH_THEME="dipadityadas"
 ```
 
 Lastly, we will execute the zsh again, in order to load our theme.
+
+```shell
+source ~/.zshrc
+```
