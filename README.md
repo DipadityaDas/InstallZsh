@@ -183,7 +183,7 @@ Lastly, we will execute the zsh again, in order to load our theme.
 source ~/.zshrc
 ```
 
-![Result]()
+![Result](https://github.com/DipadityaDas/InstallZsh/raw/main/img/result.png)
 
 ---
 ## Author: `Dipaditya Das | DipadityaDas@gmail.com`
