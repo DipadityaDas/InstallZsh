@@ -162,3 +162,6 @@ plugins=(
   zsh-navigation-tools
 )
 ```
+
+### Set a Theme
+
