@@ -170,3 +170,11 @@ First we will download the [dipadityadas.zsh-theme](https://github.com/Dipaditya
 ```shell
 cp dipadityadas.zsh-theme ~/.oh-my-zsh/theme/
 ```
+
+After that we will update the `ZSH_THEME` option in `.zshrc` file.
+
+```shell
+ZSH_THEME="dipadityadas"
+```
+
+Lastly, we will execute the zsh again, in order to load our theme.
