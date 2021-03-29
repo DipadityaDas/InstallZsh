@@ -183,6 +183,8 @@ Lastly, we will execute the zsh again, in order to load our theme.
 source ~/.zshrc
 ```
 
+![Result]()
+
 ---
 ## Author: `Dipaditya Das | DipadityaDas@gmail.com`
 ---
