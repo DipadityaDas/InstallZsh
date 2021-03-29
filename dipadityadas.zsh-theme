@@ -1,0 +1,1 @@
+PROMPT='%{$fg_bold[cyan]%}%n@%m %{$fg[yellow]%}%~%} $(git_prompt_info)'
