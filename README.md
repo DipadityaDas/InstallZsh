@@ -165,3 +165,4 @@ plugins=(
 
 ### Set a Theme
 
+First we will download the [dipadityadas.zsh-theme]().
