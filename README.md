@@ -168,7 +168,7 @@ plugins=(
 First we will download the [dipadityadas.zsh-theme](https://github.com/DipadityaDas/InstallZsh/blob/main/dipadityadas.zsh-theme).
 
 ```shell
-cp dipadityadas.zsh-theme ~/.oh-my-zsh/theme/
+cp dipadityadas.zsh-theme ~/.oh-my-zsh/themes/
 ```
 
 After that we will update the `ZSH_THEME` option in `.zshrc` file.
