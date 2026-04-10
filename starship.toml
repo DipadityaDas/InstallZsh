@@ -1,0 +1,112 @@
+# ==============================
+# GLOBAL SETTINGS
+# ==============================
+add_newline = true
+scan_timeout = 30
+command_timeout = 500
+
+# ==============================
+# FORMAT (LEFT PROMPT)
+# ==============================
+format = """
+$username$hostname$directory$git_branch$git_status$aws$kubernetes$docker_context$python$nodejs$time
+$character
+"""
+
+# ==============================
+# USER / HOST (useful in SSH)
+# ==============================
+[username]
+style_user = "bold cyan"
+style_root = "bold red"
+show_always = true
+
+[hostname]
+ssh_only = true
+style = "bold yellow"
+
+# ==============================
+# DIRECTORY
+# ==============================
+[directory]
+style = "bold cyan"
+truncation_length = 3
+truncate_to_repo = true
+
+# ==============================
+# GIT
+# ==============================
+[git_branch]
+symbol = "󰘬 "
+style = "bold purple"
+
+[git_status]
+style = "red"
+format = '([\[$all_status$ahead_behind\]]($style) )'
+
+# ==============================
+# AWS (CRITICAL FOR YOU)
+# ==============================
+[aws]
+symbol = "󰸏 "
+style = "bold red"
+format = '[$symbol$profile(\($region\))]($style) '
+
+# ==============================
+# KUBERNETES / OPENSHIFT
+# ==============================
+[kubernetes]
+symbol = "󱃾 "
+style = "bold blue"
+format = '[$symbol$context( \($namespace\))]($style) '
+disabled = false
+
+# ==============================
+# DOCKER
+# ==============================
+[docker_context]
+symbol = "🐳 "
+style = "blue bold"
+
+# ==============================
+# LANGUAGES (ONLY WHEN USED)
+# ==============================
+[python]
+# symbol = "🐍 "
+symbol = " "
+style = "yellow bold"
+detect_extensions = ["py"]
+
+[nodejs]
+symbol = "⬢ "
+style = "green bold"
+
+# ==============================
+# COMMAND DURATION (PERF INSIGHT)
+# ==============================
+[cmd_duration]
+min_time = 500
+format = "⏱ [$duration](bold red) "
+disabled = true
+
+# ==============================
+# CHARACTER (PROMPT SYMBOL)
+# ==============================
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+
+# ==============================
+# DISABLE UNUSED MODULES (PERFORMANCE)
+# ==============================
+[package]
+disabled = true
+
+[golang]
+disabled = true
+
+[java]
+disabled = true
+
+[rust]
+disabled = true
