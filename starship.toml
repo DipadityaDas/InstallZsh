@@ -40,13 +40,12 @@ style = "bold purple"
 
 [git_status]
 style = "red"
-format = '([\[$all_status$ahead_behind\]]($style) )'
+format = '([\[$all_status$ahead_behind\]]($style)) '
 
 # ==============================
 # AWS (CRITICAL FOR YOU)
 # ==============================
 [aws]
-# symbol = "󰸏 "
 symbol = ""
 style = "bold red"
 format = '[$symbol$profile(\($region\))]($style) '
@@ -72,9 +71,12 @@ style = "blue bold"
 # ==============================
 [python]
 symbol = "🐍 "
-# symbol = " "
 style = "yellow bold"
-detect_extensions = ["py"]
+pyenv_version_name = false
+python_binary = ['python', 'python3']
+detect_extensions = ['py', 'ipynb']
+detect_files = 	['.python-version', 'Pipfile', '__init__.py', 'pyproject.toml', 'requirements.txt', 'setup.py', 'tox.ini']
+format = 'via [${symbol}(${version}) (\($virtualenv\) )]($style)'
 
 [nodejs]
 symbol = "⬢ "
