@@ -8,10 +8,8 @@ command_timeout = 500
 # ==============================
 # FORMAT (LEFT PROMPT)
 # ==============================
-format = """
-$username$hostname$directory$git_branch$git_status$aws$kubernetes$docker_context$python$nodejs$time
-$character
-"""
+format = """$username$hostname$directory$git_branch$git_status$aws$kubernetes$docker_context$python$nodejs$time
+$character"""
 
 # ==============================
 # USER / HOST (useful in SSH)
@@ -48,7 +46,8 @@ format = '([\[$all_status$ahead_behind\]]($style) )'
 # AWS (CRITICAL FOR YOU)
 # ==============================
 [aws]
-symbol = "󰸏 "
+# symbol = "󰸏 "
+symbol = ""
 style = "bold red"
 format = '[$symbol$profile(\($region\))]($style) '
 
@@ -72,8 +71,8 @@ style = "blue bold"
 # LANGUAGES (ONLY WHEN USED)
 # ==============================
 [python]
-# symbol = "🐍 "
-symbol = " "
+symbol = "🐍 "
+# symbol = " "
 style = "yellow bold"
 detect_extensions = ["py"]
 
